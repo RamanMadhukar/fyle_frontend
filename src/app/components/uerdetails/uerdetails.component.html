@@ -1,0 +1,25 @@
+<div >
+    <div class="userDetails">
+        <div class="userProfile">
+            <img  [src]="userDetails?.avatar_url?userDetails?.avatar_url:'https://i.stack.imgur.com/frlIf.png'" alt="">
+            
+        </div>
+        <div class="userfullDetails">
+            <div class="details">
+                <h2>{{userDetails?.name}}</h2>
+                <p>{{userDetails?.bio}}</p>
+                <div class="Loaction">
+                    <img src="https://cdn-icons-png.flaticon.com/512/67/67872.png" alt="">
+                    <p>{{userDetails?.location}}</p>
+                </div>
+                <p>Twitter:{{userDetails?.twitter_username}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="usergit__link">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdnu8iD1A8wOGJjtE6YaKKb3bfsoWeZ4OKMrkbkLe241xqRKlz_SvDel8Bx6m85tyU4Do&usqp=CAU" alt="">
+        <a [href] = "userDetails?.html_url"
+         style="cursor: pointer;">{{userDetails?.html_url}}</a>
+    </div>
+
+</div>

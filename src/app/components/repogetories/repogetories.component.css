@@ -1,0 +1,36 @@
+.mainCard{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.repoCard {
+    text-decoration: none;
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 1px solid black;
+}
+.card-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.mainCard a {
+    text-decoration: none;
+}
+.repoCard h3 {
+    color: #0000FF;
+}
+.cardbutton button {
+    background-color: #0000FF;
+    color: #fff;
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}

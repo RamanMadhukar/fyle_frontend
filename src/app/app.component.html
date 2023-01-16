@@ -1,0 +1,12 @@
+<div class="">
+    <div class="mainComponents">
+        <div class="inputuser" *ngIf="router.url == '/'">
+            <div class="inputfield">
+                <p>Enter Username</p>
+            <input type="text" (keyup)="takeinput($event)" placeholder="Username" name="" id="">
+            </div>
+            <button (click)="handleSubmit();">Submit</button>
+        </div>
+    </div>
+    <router-outlet></router-outlet>
+</div>
